@@ -1,0 +1,20 @@
+#!/bin/bash
+#-------------------------------------------------------------------------------
+# SPDX-License-Identifier: "Apache-2.0"
+# Copyright (C) 2022, Jayesh Badwaik <j.badwaik@fz-juelich.de>
+# Copyright (C) 2022, Salem El Sayed Mohammed
+#-------------------------------------------------------------------------------
+set -euo pipefail
+
+SOURCE="${BASH_SOURCE[0]}"
+# resolve $SOURCE until the file is no longer a symlink
+while [ -h "$SOURCE" ]; do
+  DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  # if $SOURCE was a relative symlink, we need to resolve it relative to the
+  # path where the symlink file was located
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+SCRIPT_DIRECTORY="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
+
+cp $SCRIPT_DIRECTORY/../share/git/hooks/pre-commit .git/hooks

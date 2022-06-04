@@ -4,11 +4,12 @@ title = 'Reti : An Experimental Filesystem'
 description= 'An Experimental Filesystem for Educational Purposes'
 theme = "silari"
 
-copyright = "Jayesh Badwaik, Salem El Sayed Mohammed"
+copyright = "Reti Authors"
 enableGitInfo = true
 
 [params]
-copyrightStartYear = 2021
+copyrightStartYear = 2022
+sourceURL= "https://github.com/orgreti/orgreti.github.io.git"
 licenseURL= "https://creativecommons.org/licenses/by/4.0/"
 licenseImageURL= "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg"
 licenseImageAlt= "Creative Commons Attribution 4.0 International License"
@@ -16,12 +17,6 @@ licenseSPDX="CC-BY-4.0"
 
 
 [menu]
-[[menu.main]]
-name = "Journal"
-pre = "journal"
-url = "/journal/"
-weight = 1
-
 
 [[menu.main]]
 name = "Blog"

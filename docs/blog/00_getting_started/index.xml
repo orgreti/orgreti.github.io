@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0. Getting Started on Reti : An Experimental Filesystem</title>
+    <link>https://orgreti.github.io/blog/00_getting_started/</link>
+    <description>Recent content in 0. Getting Started on Reti : An Experimental Filesystem</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Reti Authors</copyright>
+    <lastBuildDate>Thu, 02 Jun 2022 22:14:40 +0200</lastBuildDate><atom:link href="https://orgreti.github.io/blog/00_getting_started/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

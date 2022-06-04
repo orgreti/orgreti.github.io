@@ -1,0 +1,36 @@
+<div class="footer desktop-only">
+  Last Updated: {{ now.Format "January 2, 2006" }}
+  &nbsp; | &nbsp;
+    &nbsp;
+  <a rel="license" href="{{ .Site.Params.licenseURL }}">
+    <img class="image" alt="{{ .Site.Params.licenseImageAlt }}"
+                     style="vertical-align:-0.2em"
+                     src="{{ .Site.Params.licenseImageURL }}" />
+  </a>
+  &nbsp;
+  © {{ .Site.Params.copyrightStartYear }}
+  -
+  {{ now.Format "2006" }}  &nbsp;
+  {{ .Site.Copyright }}
+  &nbsp; | &nbsp;
+  <a rel="source" href="{{ .Site.Params.sourceURL}}">
+    Website Repository
+  </a>
+
+</div>
+
+<div class="footer mobile-only">
+  {{ now.Format "January 2, 2006" }}
+  &nbsp; | &nbsp;
+  © {{ .Site.Params.copyrightStartYear }}
+  -
+  {{ now.Format "2006" }}  &nbsp;
+  {{ .Site.Copyright }}
+  &nbsp; | &nbsp;
+  &nbsp;
+  <a rel="license" href="{{ .Site.Params.licenseURL }}">
+    <img class="image" alt="{{ .Site.Params.licenseImageAlt }}"
+                     style="vertical-align:-0.2em"
+                     src="{{ .Site.Params.licenseImageURL }}" />
+  </a>
+</div>
